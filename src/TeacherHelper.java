@@ -3,15 +3,18 @@ import java.util.Scanner;
 
 public class TeacherHelper {
 
-	public static final double horaAula = 17.50;
+	//public static final double horaAula = 17.50;
 	public static void main(String[] args) {
 		int opcao=0, numeroAulas, qtdeAlunos, i;
-		double salarioBase, horaAtividade, descansoSemanalRemunerado, salario, notaAluno, mediaAlunos;
+		double salarioBase, horaAtividade, descansoSemanalRemunerado, salario, notaAluno, mediaAlunos, horaAula;
 		
 		Random gerador = new Random();
 		
 		Scanner leitor = new Scanner(System.in);
 		
+		System.out.println("Digite o valor da hora aula");
+		horaAula = leitor.nextDouble();
+				
 		while(opcao!=4) {
 			System.out.println("FERRAMENTA DE AUXÍLIO AO PROFESSOR!");
 			System.out.println("Selecione a opção desejada:");
